@@ -5,16 +5,16 @@ number = random.randrange(0, 100)
 Running = True
 
 while Running:
-    guess = int(input('Введите целое число, без дробей, пи'))
+    guess = int(input('Insert your number.'))
 
     if guess == number:
-        print('Ты угадал!')
+        print('Gotcha!')
         Running = False
 
     elif number > guess:
-        print('Загаданное число больше того, что вы ввели')
+        print('Guessed number is more than you have written.')
     else:
-        print('Загаданное число меньше того, что вы ввели')
+        print('Guessed number is less than you have written.')
 
 
-print('Game Over. Хотите еще?')
+print('Game Over. Want to play one more time?')
